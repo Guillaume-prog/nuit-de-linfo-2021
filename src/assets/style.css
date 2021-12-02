@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=M+PLUS+1+Code&family=Noto+Serif&display=swap');
+
+:root {
+    font-family: 'Abel', sans-serif;
+    font-size: 16pt;
+
+    color: var(--text);
+    background-color: var(--main-bg);
+
+    /* Sapcing */
+    --space-1: 8px;
+    --space-2: 16px;
+    --space-3: 24px;
+    --space-4: 32px;
+    --space-5: 48px;
+
+    /* Round edges */
+    --rounding: 8px;
+}
+
+body, html {
+    margin: 0;
+    height: 100%;
+}
+
+:root.dark {
+    --main-bg: #141414;
+    --header-bg: #222;
+    --text: #fff;
+}
+
+:root.light {
+    --main-bg: #fff;
+    --header-bg: #eee;
+    --text: #222;
+}
+
+:root.pirate {
+    --main-bg: #141414;
+    --header-bg: #222;
+    --text: #fff;
+}
