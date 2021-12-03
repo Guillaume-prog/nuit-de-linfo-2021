@@ -1,33 +1,28 @@
 <template>
   <div id="home">
-    <nav-bar></nav-bar>
-    <div id="main">
-      <search-bar></search-bar>
-    </div>
+    <search-bar></search-bar>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import NavBar from '@/components/NavBar.vue'
 import SearchBar from '../components/SearchBar.vue'
 
 export default {
   name: 'Home',
   components: {
-    NavBar, SearchBar
+    SearchBar
   }
 }
 </script>
 
 <style>
   #home {
-    height: 100%;
-    display: grid;
-    grid-auto-rows: auto 1fr;
-  }
+    width: 95%;
+    max-width: 800px;
+    margin: 0 auto;
 
-  #main {
+    padding: 20px;
+
     display: grid;
     place-items: center;
   }

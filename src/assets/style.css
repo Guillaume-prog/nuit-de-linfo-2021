@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=M+PLUS+1+Code&family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
-    font-family: 'Abel', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16pt;
 
     color: var(--text);
@@ -16,6 +16,15 @@
 
     /* Round edges */
     --rounding: 8px;
+}
+
+:root.transition * {
+    transition: color 300ms,
+                background-color 300ms;
+}
+
+input, button, select {
+    font-family: 'Montserrat', sans-serif;
 }
 
 body, html {
@@ -36,7 +45,7 @@ body, html {
 }
 
 :root.pirate {
-    --main-bg: #141414;
-    --header-bg: #222;
-    --text: #fff;
+    --main-bg: #B08968;
+    --header-bg: #DDB892;
+    --text: #222;
 }

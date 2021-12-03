@@ -6,9 +6,10 @@
       </div>
       
       <nav>
-          <a>Ajouter du contenu</a>
+          <router-link to="/">Accueil</router-link>
+          <router-link to="/wiki">Nouveau contenu</router-link>
           <div id="theme-select">
-              <feather type="sun" />
+              <feather :type="icon" @click="changeTheme" />
           </div>
         </nav>
   </header>
@@ -16,7 +17,37 @@
 
 <script>
 export default {
+  data() {
+    return {
+      themeID: 0,
+      themes: ['dark', 'light', 'pirate'],
+      icons: ['sun', 'anchor', 'moon']
+    }
+  },
 
+  created() {
+    this.setTheme()
+  },
+
+  methods: {
+    setTheme() {
+      const t = this.themes[this.themeID]
+      document.documentElement.classList.remove(...this.themes)
+      document.documentElement.classList.add(t)
+    },
+
+    changeTheme() {
+      this.themeID = (this.themeID + 1) % this.themes.length
+      console.log(this.themeID)
+      this.setTheme()
+    }
+  },
+
+  computed: {
+      icon() {
+          return this.icons[this.themeID]
+      }
+  }
 }
 </script>
 
@@ -44,12 +75,13 @@ export default {
 
     header #info h2 {
         margin: 0;
-        font-family: 'Noto Serif', serif;
+        font-family: 'Montserrat', sans-serif;
     }
 
     /* Right part */
-    header nav {
-        text-transform: uppercase;
+    header nav a {
+        color: var(--text);
+        text-decoration: none;
     }
 
     header nav #theme-select {
