@@ -1,8 +1,8 @@
 <template>
   <div class="user" v-if="showing">
       <div class="icon">
-          <feather type="user" v-if="hasIcon" />
-          <img :src="user.icon" width="50px" alt="" v-else>
+          <feather type="user" v-if="!hasIcon" />
+          <img :src="icon" width="50px" alt="" v-else>
       </div>
       <div class="presentation">
           <h5>{{ user.name }}</h5>
@@ -17,7 +17,7 @@ export default {
 
     computed: {
         hasIcon() {
-            return this.user.icon != ""
+            return this.user.img != "Photo ndi"
         },
 
         achievements() {
@@ -26,6 +26,10 @@ export default {
 
         showing() {
             return this.user.name.toLowerCase().startsWith(this.filter.toLowerCase())
+        },
+
+        icon() {
+            return '/pfp-bg/' + this.user.img
         }
     }
 }
@@ -51,6 +55,12 @@ export default {
 
         display: grid;
         place-items: center;
+
+        overflow: hidden;
+    }
+
+    .user .icon img {
+        width: 100%;
     }
 
     .user .icon > * {

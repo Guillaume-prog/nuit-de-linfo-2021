@@ -15,11 +15,11 @@
     </div>
 
     <div class="item-list" id="list-people" v-else-if="selectedMode == 'Personne'">
-      <user v-for="user of users" :key="user.x" :user="user" :filter="searchTerm" />
+      <user v-for="user of users.sort((a,b) => b.stats.personnes - a.stats.personnes)" :key="user.x" :user="user" :filter="searchTerm" />
     </div>
 
     <div class="item-list" id="list-boats" v-else-if="selectedMode == 'Bateau'">
-      <bato v-for="bato of batos" :key="bato.x" :bato="bato" :filter="searchTerm" />
+      <bato v-for="bato of batos.sort((a,b) => a.name.localeCompare(b.name))" :key="bato.x" :bato="bato" :filter="searchTerm" />
     </div>
     
     

@@ -1,6 +1,6 @@
 [{
     "name": "Arsène BOSSU",
-    "img": "Photo ndi",
+    "img": "Bossu-Arsene-portrait.png",
     "stats": {
         "equipages": 5,
         "personnes": 101
@@ -13,7 +13,7 @@
 
 {
     "name": "Charles Pierre LAVIE",
-    "img": "Photo ndi",
+    "img": "Lavie-Charles-Portrait.jpg",
     "stats": {
         "equipages": 13,
         "personnes": 156
@@ -26,7 +26,7 @@
 
 {
     "name": "Auguste Benoît Charles BRUNET",
-    "img": "Photo ndi",
+    "img": "Auguste-Brunet-Portrait.jpg",
     "stats": {
         "equipages": 9,
         "personnes": 476
@@ -39,7 +39,7 @@
 
 {
     "name": "Mathias Bonnaventure Bommelaer",
-    "img": "NULL",
+    "img": "Photo ndi",
     "stats": {
         "equipages": 3,
         "personnes": 16
@@ -52,7 +52,7 @@
 
 {
     "name": "Hermance Hachin",
-    "img": "Photo ndi",
+    "img": "Hachin-portrait.jpg",
     "stats": {
         "equipages": 0,
         "personnes": 19
@@ -65,7 +65,7 @@
 
 {
     "name": "Albert Noël Eugène BENTEU",
-    "img": "NULL",
+    "img": "Photo ndi",
     "stats": {
         "equipages": 1,
         "personnes": 12
