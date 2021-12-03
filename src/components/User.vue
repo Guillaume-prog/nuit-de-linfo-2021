@@ -5,8 +5,8 @@
           <img :src="user.icon" width="50px" alt="" v-else>
       </div>
       <div class="presentation">
-          <h5>{{ fullname }}</h5>
-          <span>{{ user.personnesSauvees }}</span>
+          <h5>{{ user.name }}</h5>
+          <span>{{ achievements }}</span>
       </div>
   </div>
 </template>
@@ -15,21 +15,17 @@
 export default {
     props: [ 'user', 'filter' ],
 
-    created() {
-        console.log(this.user)
-    },
-
     computed: {
         hasIcon() {
             return this.user.icon != ""
         },
 
-        fullname() {
-            return this.user.first_name + " " + this.user.last_name
+        achievements() {
+            return `${this.user.stats.equipages} équipages et ${this.user.stats.personnes} personnes sauvées`
         },
 
         showing() {
-            return this.fullname.toLowerCase().startsWith(this.filter.toLowerCase())
+            return this.user.name.toLowerCase().startsWith(this.filter.toLowerCase())
         }
     }
 }
@@ -48,7 +44,7 @@ export default {
     }
 
     .user .icon {
-        background:#555;
+        background: var(--user-icon);
         border-radius: var(--rounding);
         width: 100px;
         height: 100px;

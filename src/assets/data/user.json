@@ -1,12 +1,116 @@
-{
-    "name": "Machin bidule",
-    "img": "chemin/vers/image",
+[{
+    "name": "Arsène BOSSU",
+    "img": "Photo ndi",
     "stats": {
-        "equipages": 12,
-        "personnes": 5
+        "equipages": 5,
+        "personnes": 101
+    },
+    "service": {
+        "debut": 1870,
+        "fin": 1926
+    }
+},
+
+{
+    "name": "Charles Pierre LAVIE",
+    "img": "Photo ndi",
+    "stats": {
+        "equipages": 13,
+        "personnes": 156
+    },
+    "service": {
+        "debut": 1845,
+        "fin": 1886
+    }
+},
+
+{
+    "name": "Auguste Benoît Charles BRUNET",
+    "img": "Photo ndi",
+    "stats": {
+        "equipages": 9,
+        "personnes": 476
     },
     "service": {
         "debut": 1918,
-        "fin": 1978
+        "fin": 1970
     }
-}
+},
+
+{
+    "name": "Mathias Bonnaventure Bommelaer",
+    "img": "NULL",
+    "stats": {
+        "equipages": 3,
+        "personnes": 16
+    },
+    "service": {
+        "debut": 1802,
+        "fin": 1857
+    }
+},
+
+{
+    "name": "Hermance Hachin",
+    "img": "Photo ndi",
+    "stats": {
+        "equipages": 0,
+        "personnes": 19
+    },
+    "service": {
+        "debut": 1844,
+        "fin": 1908
+    }
+},
+
+{
+    "name": "Albert Noël Eugène BENTEU",
+    "img": "NULL",
+    "stats": {
+        "equipages": 1,
+        "personnes": 12
+    },
+    "service": {
+        "debut": 1904,
+        "fin": 1929
+    }
+},
+
+{
+    "name": "Louis BOSSU",
+    "img": "Photo ndi",
+    "stats": {
+        "equipages": 5,
+        "personnes": 56
+    },
+    "service": {
+        "debut": 1949,
+        "fin": 1984
+    }
+},
+
+{
+    "name": "Alfred Joseph BRUNET",
+    "img": "Photo ndi",
+    "stats": {
+        "equipages": 1,
+        "personnes": 106
+    },
+    "service": {
+        "debut": 1912,
+        "fin": 1984
+    }
+},
+
+{
+    "name": "Pierre Louis DELUGNY",
+    "img": "Photo ndi",
+    "stats": {
+        "equipages": 3,
+        "personnes": 31
+    },
+    "service": {
+        "debut": 1866,
+        "fin": 1867
+    }
+}]

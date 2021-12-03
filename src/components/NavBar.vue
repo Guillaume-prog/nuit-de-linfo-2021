@@ -12,6 +12,8 @@
               <feather :type="icon" @click="changeTheme" />
           </div>
         </nav>
+
+        <div id="hint-text" v-if="themeID == 2">A la recherche de pirates</div>
   </header>
 </template>
 
@@ -21,12 +23,19 @@ export default {
     return {
       themeID: 0,
       themes: ['dark', 'light', 'pirate'],
-      icons: ['sun', 'anchor', 'moon']
+      icons: ['sun', 'anchor', 'moon'],
+      audio: null
     }
   },
 
   created() {
+    if(!this.$cookies.isKey('ups-theme'))
+      this.$cookies.set('ups-theme', '0')
+    this.themeID = Number(this.$cookies.get('ups-theme'))
+
     this.setTheme()
+    //this.audio = new Audio("../assets/yarr.mp3")
+    //this.audio.play()
   },
 
   methods: {
@@ -34,12 +43,15 @@ export default {
       const t = this.themes[this.themeID]
       document.documentElement.classList.remove(...this.themes)
       document.documentElement.classList.add(t)
+      this.$cookies.set("ups-theme", ''+this.themeID)
     },
 
     changeTheme() {
       this.themeID = (this.themeID + 1) % this.themes.length
-      console.log(this.themeID)
       this.setTheme()
+
+      //if(this.themeID == 2) this.audio.play()
+      //else this.audio.pause()
     }
   },
 
@@ -90,6 +102,12 @@ export default {
 
         display: grid;
         place-items: center;
+    }
+
+    #hint-text {
+      position: fixed;
+      bottom: var(--space-2);
+      left: var(--space-2);
     }
 
 </style>

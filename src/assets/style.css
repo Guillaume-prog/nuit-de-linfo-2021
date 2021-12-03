@@ -40,6 +40,8 @@ body, html {
     --header-bg: #222222AA;
     --text: #fff;
 
+    --user-icon: rgb(39, 39, 39);
+
     background-image: url('./backgrounds/night-bg.png');
 }
 
@@ -48,6 +50,8 @@ body, html {
     --header-bg: #eeeeeeAA;
     --text: #222;
 
+    --user-icon: #AAA;
+
     background-image: url('./backgrounds/day-bg.png');
 }
 
@@ -55,6 +59,8 @@ body, html {
     --main-bg: #14141480;
     --header-bg: #22222280;
     --text: #fff;
+
+    --user-icon: rgb(62, 66, 85);
 
     background-image: url('./backgrounds/pirate-bg.jpg');
 }
