@@ -1,7 +1,7 @@
 <template>
   <div id="searchbar">
     <feather type="search" />
-      <input v-model="searchTerm" type="text" :placeholder="tooltip">
+      <input v-model="searchTerm" type="text" :placeholder="tooltip" @keyup="keyUp">
       <span id="type-select" @click="changeType">{{ searchType }}</span>
   </div>
 </template>
@@ -20,6 +20,11 @@ export default {
   methods: {
     changeType() {
       this.searchTypeID = (this.searchTypeID + 1) % this.searchTypes.length
+      this.$emit('update', {term: this.searchTerm, type: this.searchType})
+    },
+
+    keyUp() {
+      this.$emit('update', {term: this.searchTerm, type: this.searchType})
     }
   },
 
@@ -57,7 +62,7 @@ export default {
     outline: none;
 
     border: none;
-    background-color:var(--header-bg);
+    background-color: transparent;
     color: var(--text);
 
     font-size: 16pt;

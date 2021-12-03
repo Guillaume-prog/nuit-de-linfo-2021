@@ -1,0 +1,12 @@
+{
+    "name": "Machin bidule",
+    "img": "chemin/vers/image",
+    "stats": {
+        "equipages": 12,
+        "personnes": 5
+    },
+    "service": {
+        "debut": 1918,
+        "fin": 1978
+    }
+}

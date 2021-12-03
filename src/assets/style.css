@@ -5,7 +5,10 @@
     font-size: 16pt;
 
     color: var(--text);
-    background-color: var(--main-bg);
+    
+    background: var(--main-bg) center center;
+    background-size: cover;
+    background-attachment: fixed;
 
     /* Sapcing */
     --space-1: 8px;
@@ -33,19 +36,25 @@ body, html {
 }
 
 :root.dark {
-    --main-bg: #141414;
-    --header-bg: #222;
+    --main-bg: #141414AA;
+    --header-bg: #222222AA;
     --text: #fff;
+
+    background-image: url('./backgrounds/night-bg.png');
 }
 
 :root.light {
-    --main-bg: #fff;
-    --header-bg: #eee;
+    --main-bg: #ffffffAA;
+    --header-bg: #eeeeeeAA;
     --text: #222;
+
+    background-image: url('./backgrounds/day-bg.png');
 }
 
 :root.pirate {
-    --main-bg: #B08968;
-    --header-bg: #DDB892;
-    --text: #222;
+    --main-bg: #14141480;
+    --header-bg: #22222280;
+    --text: #fff;
+
+    background-image: url('./backgrounds/pirate-bg.jpg');
 }
