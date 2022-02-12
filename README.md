@@ -1,24 +1,5 @@
 # Nuit de l'info 2021
 
-## Project setup
-```
-npm install
-```
+"Nuit de l'info" is a nationnal coding competition held every year during the first week of December. The aim is to develop a web based application overnight that meets specifications set by the organisers. There is also the possibility to complete up to five side-challenges to add some fun to the evening (eg : hiding an easter egg, adding a dark theme).
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+This repository contains the codebase of our team's participation (Go UPSSISOMNIACS !)
